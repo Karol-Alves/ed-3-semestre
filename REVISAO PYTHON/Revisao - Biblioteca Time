@@ -1,0 +1,6 @@
+import time #Tempo
+
+#Temporizador
+for i in range (5):
+  print("conectando...")
+  time.sleep(1)

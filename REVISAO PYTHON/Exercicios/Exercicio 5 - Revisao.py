@@ -2,9 +2,11 @@
 
 import getpass
 
-senha = getpass.getpass('Digite a senha de acesso a empresa: ')
+while True:
+    senha = getpass.getpass('Digite a senha de acesso a empresa: ')
 
-if senha == '1234':
-    print('Acesso concedido')
-else:
-    print('Acesso negado')
+    if senha == '1234':
+        print('Acesso concedido')
+        break  
+    else:
+        print('Senha incorreta. Tente novamente.')
